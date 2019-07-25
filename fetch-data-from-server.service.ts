@@ -8,12 +8,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FetchDataFromServerService {
 
+  cityName: string;
   constructor(private http : HttpClient) { }
 
   findWeather(): Observable<WeatherData>{
 
-    return this.http.get<WeatherData>("api.openweathermap.org/data/2.5/weather?q=London");
+    return this.http.get<WeatherData>("http://api.openweathermap.org/data/2.5/weather?q="+this.cityName+"&APPID=cc9f6f60e57645be41685af7d4cba1dc");
 
+
+  }
+
+  cityData(cityName){
+
+    this.cityName = cityName;
 
   }
 }

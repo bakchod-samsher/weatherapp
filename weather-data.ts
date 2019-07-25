@@ -1,4 +1,7 @@
 export interface WeatherData {
-    cityName : string;
-    temperature : Int16Array;
+    temp: Float32Array;
+    pressure: Float32Array;
+    humidity: Float32Array;
+    temp_min: Float32Array;
+    temp_max: Float32Array;
 }
