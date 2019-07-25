@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { ShowWeatherDataComponent } from './show-weather-data/show-weather-data.component';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    ShowWeatherDataComponent
+    ShowWeatherDataComponent,
+ 
   ],
   imports: [
     BrowserModule,

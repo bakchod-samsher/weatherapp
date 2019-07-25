@@ -1,0 +1,14 @@
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px
+}
+
+.inputCity{
+
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+}
